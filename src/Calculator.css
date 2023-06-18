@@ -1,0 +1,48 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+.calculator {
+    margin-top: 2rem;
+    display: inline-block;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+    background-color: #0004ff;
+    width: 385px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .result {
+    width: 100%;
+    padding: 100px;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+    background-color: rgb(28, 120, 224);
+  }
+  
+  .keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-column: 1 / -1;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    color: white;
+    background-color: #0004ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .clear,
+  .delete {
+    background-color: #0004ff;
+    grid-column: span 2;
+  }
+  
